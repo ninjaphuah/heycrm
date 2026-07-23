@@ -3229,6 +3229,11 @@ msgstr "GIN 索引適用於多選、陣列、JSON 和搜尋向量欄位。「{0}
 msgid "Google API authentication is disabled."
 msgstr "已停用 Google API 身分驗證。"
 
+#. js-lingui-id: B8k7gV
+#: src/modules/contact-creation-manager/google-contacts-import/services/google-contacts-import.service.ts
+msgid "Google Contacts import is only available for Google accounts."
+msgstr ""
+
 #. js-lingui-id: pXkgL2
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
@@ -6296,6 +6301,11 @@ msgstr "接收時間"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
 msgid "Recipients"
 msgstr "收件人"
+
+#. js-lingui-id: q0mbFO
+#: src/modules/contact-creation-manager/google-contacts-import/services/google-contacts-import.service.ts
+msgid "Reconnect this Google account to grant Contacts access, then try again."
+msgstr ""
 
 #. js-lingui-id: EESfI5
 #: src/engine/twenty-orm/exceptions/twenty-orm.exception.ts

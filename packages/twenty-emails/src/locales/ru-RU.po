@@ -65,11 +65,6 @@ msgstr "Подтвердите ваш новый адрес электронно
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Подключиться к Twenty"
-
-#. js-lingui-explicit-id
-#: src/emails/password-update-notify.email.tsx
 msgid "Dear {userName},"
 msgstr "Уважаемый {userName},"
 
@@ -146,11 +141,6 @@ msgstr "Это CRM, программное обеспечение для эфф�
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "Its data has been removed and can no longer be recovered."
 msgstr "Его данные удалены и больше не подлежат восстановлению."
-
-#. js-lingui-explicit-id
-#: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Присоединяйтесь к вашей команде на Twenty"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -308,11 +298,6 @@ msgstr "Мы сами не любим неожиданные списания, �
 #: src/components/Footer.tsx
 msgid "Website"
 msgstr "Веб-сайт"
-
-#. js-lingui-explicit-id
-#: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "Что такое Twenty?"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx

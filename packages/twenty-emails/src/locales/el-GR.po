@@ -65,11 +65,6 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Συνδεθείτε στο Twenty"
-
-#. js-lingui-explicit-id
-#: src/emails/password-update-notify.email.tsx
 msgid "Dear {userName},"
 msgstr "Αγαπητέ/ή {userName},"
 
@@ -146,11 +141,6 @@ msgstr "Είναι ένα CRM, ένα λογισμικό που βοηθά τι�
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "Its data has been removed and can no longer be recovered."
 msgstr "Τα δεδομένα του έχουν αφαιρεθεί και δεν μπορούν πλέον να ανακτηθούν."
-
-#. js-lingui-explicit-id
-#: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Συμμετέχετε στην ομάδα σας στο Twenty"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -308,11 +298,6 @@ msgstr "Δεν μας αρέσουν οι απρόσμενες χρεώσεις,
 #: src/components/Footer.tsx
 msgid "Website"
 msgstr "Ιστοσελίδα"
-
-#. js-lingui-explicit-id
-#: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "Τι είναι το Twenty;"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx

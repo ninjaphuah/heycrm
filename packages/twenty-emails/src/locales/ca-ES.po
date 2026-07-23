@@ -65,11 +65,6 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Connecta't a Twenty"
-
-#. js-lingui-explicit-id
-#: src/emails/password-update-notify.email.tsx
 msgid "Dear {userName},"
 msgstr "Benvolgut {userName},"
 
@@ -146,11 +141,6 @@ msgstr "És un CRM, un programari per ajudar les empreses a gestionar les seves 
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "Its data has been removed and can no longer be recovered."
 msgstr "Les seves dades s'han suprimit i ja no es poden recuperar."
-
-#. js-lingui-explicit-id
-#: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Uneix-te al teu equip a Twenty"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -308,11 +298,6 @@ msgstr "No ens agraden els càrrecs per sorpresa, així que aquí teniu un avís
 #: src/components/Footer.tsx
 msgid "Website"
 msgstr "Lloc web"
-
-#. js-lingui-explicit-id
-#: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "Què és Twenty?"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx

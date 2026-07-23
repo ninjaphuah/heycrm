@@ -65,11 +65,6 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Twenty에 연결하세요"
-
-#. js-lingui-explicit-id
-#: src/emails/password-update-notify.email.tsx
 msgid "Dear {userName},"
 msgstr "{userName}님께,"
 
@@ -146,11 +141,6 @@ msgstr "이는 CRM이며, 기업이 고객 데이터를 효율적으로 관리�
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "Its data has been removed and can no longer be recovered."
 msgstr "해당 데이터는 삭제되었으며 더 이상 복구할 수 없습니다."
-
-#. js-lingui-explicit-id
-#: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Twenty에서 팀에 합류하세요"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -308,11 +298,6 @@ msgstr "예상치 못한 결제가 발생하는 것을 좋아하지 않기에, �
 #: src/components/Footer.tsx
 msgid "Website"
 msgstr "웹사이트"
-
-#. js-lingui-explicit-id
-#: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "트웬티란 무엇인가요?"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx

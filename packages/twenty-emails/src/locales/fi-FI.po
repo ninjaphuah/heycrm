@@ -65,11 +65,6 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Yhdistä Twenty"
-
-#. js-lingui-explicit-id
-#: src/emails/password-update-notify.email.tsx
 msgid "Dear {userName},"
 msgstr "Hyvä {userName},"
 
@@ -146,11 +141,6 @@ msgstr "Se on CRM, ohjelmisto, joka auttaa yrityksiä hallitsemaan asiakastietoj
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "Its data has been removed and can no longer be recovered."
 msgstr "Sen tiedot on poistettu eikä niitä voida enää palauttaa."
-
-#. js-lingui-explicit-id
-#: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Liity tiimiisi Twentyssä"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -308,11 +298,6 @@ msgstr "Emme pidä yllättävistä veloituksista, joten tässä ystävällinen m
 #: src/components/Footer.tsx
 msgid "Website"
 msgstr "Verkkosivusto"
-
-#. js-lingui-explicit-id
-#: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "Mikä on Twenty?"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx

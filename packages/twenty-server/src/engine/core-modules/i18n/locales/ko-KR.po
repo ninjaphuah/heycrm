@@ -3229,6 +3229,11 @@ msgstr "GIN 인덱스는 multi-select, 배열, JSON 및 search-vector 열에서 
 msgid "Google API authentication is disabled."
 msgstr "Google API 인증이 비활성화되어 있습니다."
 
+#. js-lingui-id: B8k7gV
+#: src/modules/contact-creation-manager/google-contacts-import/services/google-contacts-import.service.ts
+msgid "Google Contacts import is only available for Google accounts."
+msgstr ""
+
 #. js-lingui-id: pXkgL2
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
@@ -6296,6 +6301,11 @@ msgstr "수신 시간"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
 msgid "Recipients"
 msgstr "수신자"
+
+#. js-lingui-id: q0mbFO
+#: src/modules/contact-creation-manager/google-contacts-import/services/google-contacts-import.service.ts
+msgid "Reconnect this Google account to grant Contacts access, then try again."
+msgstr ""
 
 #. js-lingui-id: EESfI5
 #: src/engine/twenty-orm/exceptions/twenty-orm.exception.ts

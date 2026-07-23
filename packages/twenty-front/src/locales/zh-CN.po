@@ -8034,6 +8034,11 @@ msgstr "设置维护模式失败。"
 msgid "Failed to start backfill"
 msgstr "启动回填失败"
 
+#. js-lingui-id: in14Nq
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Failed to start Google Contacts import"
+msgstr ""
+
 #. js-lingui-id: OX7bKt
 #: src/modules/settings/admin-panel/apps/components/SettingsAdminApps.tsx
 msgid "Failed to synchronize the marketplace catalog."
@@ -8840,6 +8845,11 @@ msgstr "金色"
 msgid "Google"
 msgstr "谷歌"
 
+#. js-lingui-id: FSYKmV
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Google Contacts import started"
+msgstr ""
+
 #. js-lingui-id: CQwSng
 #: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersForm.tsx
 msgid "Google OIDC"
@@ -9468,6 +9478,11 @@ msgstr "导入所有电子邮件"
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
 msgid "Import CSV"
 msgstr "导入CSV"
+
+#. js-lingui-id: BVIdI7
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Import Google Contacts"
+msgstr ""
 
 #. js-lingui-id: D5QSQM
 #: src/modules/settings/accounts/components/SettingsAccountsMessageFolderCard.tsx
@@ -19793,10 +19808,10 @@ msgstr ""
 msgid "Weight"
 msgstr "权重"
 
-#. js-lingui-id: nTuObL
+#. js-lingui-id: cuot26
 #: src/pages/auth/SignInUp.tsx
-msgid "Welcome to Twenty"
-msgstr "欢迎来到 Twenty"
+msgid "Welcome to {productName}"
+msgstr ""
 
 #. js-lingui-id: t8ZvkC
 #: src/pages/auth/SignInUp.tsx

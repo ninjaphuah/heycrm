@@ -8034,6 +8034,11 @@ msgstr "Không thể thiết lập chế độ bảo trì."
 msgid "Failed to start backfill"
 msgstr "Không thể bắt đầu quá trình backfill"
 
+#. js-lingui-id: in14Nq
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Failed to start Google Contacts import"
+msgstr ""
+
 #. js-lingui-id: OX7bKt
 #: src/modules/settings/admin-panel/apps/components/SettingsAdminApps.tsx
 msgid "Failed to synchronize the marketplace catalog."
@@ -8840,6 +8845,11 @@ msgstr "Vàng kim"
 msgid "Google"
 msgstr "Google"
 
+#. js-lingui-id: FSYKmV
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Google Contacts import started"
+msgstr ""
+
 #. js-lingui-id: CQwSng
 #: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersForm.tsx
 msgid "Google OIDC"
@@ -9491,6 +9501,11 @@ msgstr "Nhập tất cả email"
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
 msgid "Import CSV"
 msgstr "Nhập CSV"
+
+#. js-lingui-id: BVIdI7
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Import Google Contacts"
+msgstr ""
 
 #. js-lingui-id: D5QSQM
 #: src/modules/settings/accounts/components/SettingsAccountsMessageFolderCard.tsx
@@ -19846,10 +19861,10 @@ msgstr ""
 msgid "Weight"
 msgstr "Trọng số"
 
-#. js-lingui-id: nTuObL
+#. js-lingui-id: cuot26
 #: src/pages/auth/SignInUp.tsx
-msgid "Welcome to Twenty"
-msgstr "Chào mừng đến với Twenty"
+msgid "Welcome to {productName}"
+msgstr ""
 
 #. js-lingui-id: t8ZvkC
 #: src/pages/auth/SignInUp.tsx

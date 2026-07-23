@@ -3229,6 +3229,11 @@ msgstr "GIN-індекси працюють з багатовибірковим�
 msgid "Google API authentication is disabled."
 msgstr "Автентифікацію через API Google вимкнено."
 
+#. js-lingui-id: B8k7gV
+#: src/modules/contact-creation-manager/google-contacts-import/services/google-contacts-import.service.ts
+msgid "Google Contacts import is only available for Google accounts."
+msgstr ""
+
 #. js-lingui-id: pXkgL2
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-page-layout-widget-validator.service.ts
@@ -6296,6 +6301,11 @@ msgstr "Отримано"
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-message-campaign-standard-flat-field-metadata.util.ts
 msgid "Recipients"
 msgstr "Одержувачі"
+
+#. js-lingui-id: q0mbFO
+#: src/modules/contact-creation-manager/google-contacts-import/services/google-contacts-import.service.ts
+msgid "Reconnect this Google account to grant Contacts access, then try again."
+msgstr ""
 
 #. js-lingui-id: EESfI5
 #: src/engine/twenty-orm/exceptions/twenty-orm.exception.ts

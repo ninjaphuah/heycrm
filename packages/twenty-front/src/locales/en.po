@@ -8029,6 +8029,11 @@ msgstr "Failed to set maintenance mode."
 msgid "Failed to start backfill"
 msgstr "Failed to start backfill"
 
+#. js-lingui-id: in14Nq
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Failed to start Google Contacts import"
+msgstr "Failed to start Google Contacts import"
+
 #. js-lingui-id: OX7bKt
 #: src/modules/settings/admin-panel/apps/components/SettingsAdminApps.tsx
 msgid "Failed to synchronize the marketplace catalog."
@@ -8835,6 +8840,11 @@ msgstr "Gold"
 msgid "Google"
 msgstr "Google"
 
+#. js-lingui-id: FSYKmV
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Google Contacts import started"
+msgstr "Google Contacts import started"
+
 #. js-lingui-id: CQwSng
 #: src/modules/settings/security/components/SSO/SettingsSSOIdentitiesProvidersForm.tsx
 msgid "Google OIDC"
@@ -9486,6 +9496,11 @@ msgstr "Import all emails"
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
 msgid "Import CSV"
 msgstr "Import CSV"
+
+#. js-lingui-id: BVIdI7
+#: src/modules/settings/accounts/components/SettingsAccountsRowDropdownMenu.tsx
+msgid "Import Google Contacts"
+msgstr "Import Google Contacts"
 
 #. js-lingui-id: D5QSQM
 #: src/modules/settings/accounts/components/SettingsAccountsMessageFolderCard.tsx
@@ -19843,10 +19858,10 @@ msgstr "weeks"
 msgid "Weight"
 msgstr "Weight"
 
-#. js-lingui-id: nTuObL
+#. js-lingui-id: cuot26
 #: src/pages/auth/SignInUp.tsx
-msgid "Welcome to Twenty"
-msgstr "Welcome to Twenty"
+msgid "Welcome to {productName}"
+msgstr "Welcome to {productName}"
 
 #. js-lingui-id: t8ZvkC
 #: src/pages/auth/SignInUp.tsx

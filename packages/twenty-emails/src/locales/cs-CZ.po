@@ -65,11 +65,6 @@ msgstr "Potvrďte vaši novou emailovou adresu"
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Připojte se k Twenty"
-
-#. js-lingui-explicit-id
-#: src/emails/password-update-notify.email.tsx
 msgid "Dear {userName},"
 msgstr "Vážený {userName},"
 
@@ -146,11 +141,6 @@ msgstr "Je to CRM, software, který pomáhá firmám efektivně spravovat jejich
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "Its data has been removed and can no longer be recovered."
 msgstr "Jeho data byla odstraněna a již je nelze obnovit."
-
-#. js-lingui-explicit-id
-#: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Připojte se k svému týmu na Twenty"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -308,11 +298,6 @@ msgstr "Nemáme rádi nečekané poplatky, proto vám posíláme přátelské up
 #: src/components/Footer.tsx
 msgid "Website"
 msgstr "Webové stránky"
-
-#. js-lingui-explicit-id
-#: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "Co je Twenty?"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
