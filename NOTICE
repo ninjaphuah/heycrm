@@ -1,0 +1,35 @@
+HeyCRM
+Copyright (c) 2026 HeyCRM contributors
+
+This product is a derivative work of Twenty
+(https://github.com/twentyhq/twenty), Copyright (c) 2023-present
+Twenty.com, PBC and contributors.
+
+HeyCRM is licensed under the GNU Affero General Public License v3.0
+(AGPL-3.0), the same open-source license that covers the majority of
+the Twenty codebase. See the LICENSE file in this repository.
+
+Twenty attribution
+------------------
+Portions of this software are copied or modified from the Twenty
+project. Those portions remain copyright Twenty.com, PBC and their
+respective contributors. HeyCRM is not affiliated with, endorsed by,
+or sponsored by Twenty.com, PBC.
+
+Enterprise-licensed files
+-------------------------
+Certain files in the upstream Twenty tree are marked with:
+
+  /* @license Enterprise */
+
+Those files are NOT licensed under AGPL-3.0. They are subject to the
+Twenty.com Commercial License described in LICENSE. HeyCRM does not
+grant any rights to use those Enterprise-marked files in production.
+Self-hosters and redistributors must leave Enterprise features disabled
+unless they have a valid Twenty Enterprise subscription.
+
+Modifications
+-------------
+HeyCRM-specific changes (product branding, PRODUCT_NAME / PRODUCT_LOGO_URL
+configuration, documentation) are copyright HeyCRM contributors and
+released under AGPL-3.0.
