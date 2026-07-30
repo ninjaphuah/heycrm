@@ -10,11 +10,11 @@ name: twenty-dev
 
 services:
   db:
-    image: postgres:16
+    image: postgres:17-trixie
     volumes:
       - dev-db-data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5440:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
 
   redis:
-    image: redis:7
+    image: redis:8-alpine
     ports:
       - "6379:6379"
     command: ["--maxmemory-policy", "noeviction"]

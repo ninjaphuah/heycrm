@@ -21,6 +21,9 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 COMPOSE_FILE="$REPO_ROOT/packages/twenty-docker/docker-compose.dev.yml"
+POSTGRES_PORT=5440
+export NX_SOCKET_DIR="${NX_SOCKET_DIR:-/tmp/nx}"
+mkdir -p "$NX_SOCKET_DIR"
 
 info()  { echo "=> $*"; }
 ok()    { echo "   done: $*"; }
@@ -41,9 +44,9 @@ can_use_docker() {
 
 pg_is_up() {
   if command -v pg_isready &>/dev/null; then
-    pg_isready -h localhost -p 5432 -U postgres -q 2>/dev/null
+    pg_isready -h localhost -p "$POSTGRES_PORT" -U postgres -q 2>/dev/null
   elif command -v psql &>/dev/null; then
-    PGPASSWORD=postgres psql -h localhost -p 5432 -U postgres -c "SELECT 1" &>/dev/null
+    PGPASSWORD=postgres psql -h localhost -p "$POSTGRES_PORT" -U postgres -c "SELECT 1" &>/dev/null
   elif can_use_docker && docker compose -f "$COMPOSE_FILE" ps --quiet db 2>/dev/null | grep -q .; then
     docker compose -f "$COMPOSE_FILE" exec -T db pg_isready -U postgres -q 2>/dev/null
   else
@@ -82,7 +85,7 @@ wait_for_redis() {
 
 schema_exists() {
   if command -v psql &>/dev/null; then
-    PGPASSWORD=postgres psql -h localhost -p 5432 -U postgres -d default -t -c "SELECT 1 FROM pg_catalog.pg_namespace WHERE nspname = 'core'" 2>/dev/null | grep -q 1
+    PGPASSWORD=postgres psql -h localhost -p "$POSTGRES_PORT" -U postgres -d default -t -c "SELECT 1 FROM pg_catalog.pg_namespace WHERE nspname = 'core'" 2>/dev/null | grep -q 1
   elif can_use_docker && docker compose -f "$COMPOSE_FILE" ps --quiet db 2>/dev/null | grep -q .; then
     docker compose -f "$COMPOSE_FILE" exec -T db psql -U postgres -d default -t -c "SELECT 1 FROM pg_catalog.pg_namespace WHERE nspname = 'core'" 2>/dev/null | grep -q 1
   else
@@ -211,7 +214,7 @@ else
   start_redis
 fi
 
-ok "PostgreSQL on localhost:5432"
+ok "PostgreSQL on localhost:$POSTGRES_PORT"
 ok "Redis on localhost:6379"
 
 # =============================================================================
@@ -220,7 +223,7 @@ ok "Redis on localhost:6379"
 info "Creating databases..."
 run_psql() {
   if command -v psql &>/dev/null; then
-    PGPASSWORD=postgres psql -h localhost -p 5432 -U postgres -d postgres -c "$1" 2>/dev/null || true
+    PGPASSWORD=postgres psql -h localhost -p "$POSTGRES_PORT" -U postgres -d postgres -c "$1" 2>/dev/null || true
   elif can_use_docker && docker compose -f "$COMPOSE_FILE" ps --quiet db 2>/dev/null | grep -q .; then
     docker compose -f "$COMPOSE_FILE" exec -T db psql -U postgres -d postgres -c "$1" 2>/dev/null || true
   else
@@ -276,6 +279,6 @@ echo ""
 echo "Dev environment ready."
 echo ""
 echo "  yarn start                         # start everything"
-echo "  npx nx start twenty-front          # frontend  -> http://localhost:3001"
-echo "  npx nx start twenty-server         # backend   -> http://localhost:3000"
+echo "  npx nx start twenty-front          # frontend  -> http://localhost:3021"
+echo "  npx nx start twenty-server         # backend   -> http://localhost:3020"
 echo ""
