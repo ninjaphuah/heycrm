@@ -17,7 +17,7 @@ COPY ./packages/twenty-front-component-renderer/package.json /app/packages/twent
 COPY ./packages/twenty-sdk/package.json /app/packages/twenty-sdk/
 COPY ./packages/twenty-client-sdk/package.json /app/packages/twenty-client-sdk/
 
-RUN yarn workspaces focus twenty twenty-front twenty-front-component-renderer twenty-ui twenty-shared twenty-sdk twenty-client-sdk && yarn cache clean && npx nx reset
+RUN yarn workspaces focus heycrm twenty-front twenty-front-component-renderer twenty-ui twenty-shared twenty-sdk twenty-client-sdk && yarn cache clean && npx nx reset
 
 
 FROM node:24.18.0-alpine3.23@sha256:595398b0081eacda8e1c4c5b97b76cd1020e4d58a8ebcb4843b9bca1e79e7436 AS server-deps
@@ -34,7 +34,7 @@ COPY ./packages/twenty-server/patches /app/packages/twenty-server/patches
 COPY ./packages/twenty-shared/package.json /app/packages/twenty-shared/
 COPY ./packages/twenty-client-sdk/package.json /app/packages/twenty-client-sdk/
 
-RUN yarn workspaces focus twenty twenty-server twenty-emails twenty-shared twenty-client-sdk && yarn cache clean && npx nx reset
+RUN yarn workspaces focus heycrm twenty-server twenty-emails twenty-shared twenty-client-sdk && yarn cache clean && npx nx reset
 
 
 FROM server-deps AS twenty-server-build
