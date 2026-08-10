@@ -1,0 +1,59 @@
+name: heycrm-infra
+
+# Deploy as standalone infrastructure for HeyCRM server and worker.
+# Join Dokploy's existing shared network: dokploy-network.
+# Start:
+#   docker-compose --env-file .env.infra -f docker-compose.infra.yml up -d
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ${PG_DATABASE_NAME:-default}
+      POSTGRES_USER: ${PG_DATABASE_USER:-postgres}
+      POSTGRES_PASSWORD: ${PG_DATABASE_PASSWORD:?set PG_DATABASE_PASSWORD}
+    volumes:
+      - heycrm-postgres-data:/var/lib/postgresql/data
+    networks:
+      dokploy-network:
+        aliases:
+          - postgres
+          - db
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PG_DATABASE_USER:-postgres} -d ${PG_DATABASE_NAME:-default}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  redis:
+    image: redis:8-alpine
+    command:
+      - redis-server
+      - --appendonly
+      - "yes"
+      - --maxmemory-policy
+      - noeviction
+      - --requirepass
+      - ${REDIS_PASSWORD:?set REDIS_PASSWORD}
+    volumes:
+      - heycrm-redis-data:/data
+    networks:
+      dokploy-network:
+        aliases:
+          - redis
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a '${REDIS_PASSWORD:?set REDIS_PASSWORD}' ping | grep PONG"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  heycrm-postgres-data:
+  heycrm-redis-data:
+
+networks:
+  dokploy-network:
+    external: true
+    name: dokploy-network
